@@ -8,6 +8,7 @@ async function bootstrap() {
   // Add middleware HERE!
   app.useGlobalPipes(new ValidationPipe())
 
-  await app.listen(parseInt(process.env.PORT) || 4000)
+  await app.listen(parseInt(process.env.PORT) || 4000);
+
 }
 bootstrap();
